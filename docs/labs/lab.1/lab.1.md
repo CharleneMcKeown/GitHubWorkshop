@@ -4,7 +4,7 @@ Go to your newly created repo (from the one you forked earlier) and explore the 
 
 We have a .Net Core application called eShopOnWeb which we want to deploy as part of this workshop.
 
-##Create your first Action
+## Create your first Action
 
 GitHub Actions are a way for us to do something with our code, in an automated way.  We can build it, test it, scan it for secrets, push it somewhere else, and even deploy it to some infrastructure somewhere.  
 
