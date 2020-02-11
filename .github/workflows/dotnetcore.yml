@@ -17,3 +17,16 @@ jobs:
       run: dotnet build ./eShopOnWeb.sln --configuration Release
     - name: Test with dotnet
       run: dotnet test ./eShopOnWeb.sln --configuration Release
+    - name: Publish Docker
+      uses: elgohr/Publish-Docker-Github-Action@2.12
+      with:
+        # The name of the image you would like to push
+        name: githubworkshop30035600.azurecr.io/eshopwebmvc
+        # The login username for the registry
+        username: ${{ secrets.ACR_USERNAME }}
+        # The login password for the registry
+        password: ${{ secrets.ACR_PASSWORD }}
+        # Use registry for pushing to a custom registry
+        registry: ${{ secrets.ACR_REGISTRY }}
+        # Use dockerfile when you would like to explicitly build a Dockerfile
+        dockerfile: ./src/Web/Dockerfile
