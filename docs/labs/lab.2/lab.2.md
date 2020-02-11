@@ -126,4 +126,4 @@ Once it completes, navigate back to the Azure portal and take a look at your ACR
 
 In the next lab, we will deploy a Web App for Containers and set it up so that it always has the latest image from the container registry. 
 
-[Onward to Lab 3!](docs/labs/lab.3/lab.3.md)
+[Onward to Lab 3!](../lab.3/lab.3.md)
