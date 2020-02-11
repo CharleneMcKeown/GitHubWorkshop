@@ -53,3 +53,5 @@ az acr create --name $myACR --resource-group $myResourceGroup --sku Basic --admi
 * **Username** (GitHubWorkShop********)
 * **Password** (will be a long, unique string)
 > Note: You can find the login server name on the overview page, top right, and the username and password under **Access Keys** on the left hand side menu.
+
+[Onward to Lab 1!](docs/labs/lab.1/lab.1.md)

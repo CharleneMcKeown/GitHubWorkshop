@@ -68,3 +68,5 @@ You will notice on line 3, it reads **on: [push]**. This means that the workflow
 After a few minutes, the workflow will finish and you should see a green tick beside it.  Success!
 
 In the next lab, we will add some more steps to the workflow to build a Docker image and deploy that image to the Container Registry you created earlier.
+
+[Onward to Lab 2!](docs/labs/lab.2/lab.2.md)
