@@ -6,6 +6,8 @@ You will then enable continuous deployment on a Web App, so that whenever change
 
 The architecture looks like this:
 
+<img src="architecture.PNG">
+
 
 Links to the labs are below, and these are sequential - ensure you do them in order. 
 
