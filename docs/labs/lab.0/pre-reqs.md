@@ -49,7 +49,7 @@ az acr create --name $myACR --resource-group $myResourceGroup --sku Basic --admi
 <br>
 4. Open notepad, or somewhere you can paste in some values which we will need later.  Find the:
 
-**Login Server name:** (GitHubWorkShop********.azurecr.io)
-**Username** (GitHubWorkShop********)
-**Password** (will be a long, unique string)
+* **Login Server name:** (GitHubWorkShop********.azurecr.io)
+* **Username** (GitHubWorkShop********)
+* **Password** (will be a long, unique string)
 > Note: You can find the login server name on the overview page, top right, and the username and password under **Access Keys** on the left hand side menu.
