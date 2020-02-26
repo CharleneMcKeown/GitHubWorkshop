@@ -55,12 +55,7 @@ uns-on: ubuntu-latest
 
 We do not want to expose credentials in our pipeline, so we can make use of GitHub Secrets.  For now, refer back to the values you saved earlier after creating your ACR. 
 
-* Replace line 24 with: **<youracrname\>.azurecr.io/eshopwebmvc** 
-* Replace line 26 with: **username: ${{ secrets.ACR_USERNAME }}**
-* Replace line 28 with: **password: ${{ secrets.ACR_PASSWORD }}**
-* Replace line 30 with: **registry: ${{ secrets.ACR_REGISTRY }}**
-* Replace line 32 with: **dockerfile: ./src/Web/Dockerfile**
-<br>
+<img src="imgs/secrets-image.PNG">
 
 Your file should now look like this:
 
