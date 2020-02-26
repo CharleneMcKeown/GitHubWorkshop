@@ -59,40 +59,8 @@ We do not want to expose credentials in our pipeline, so we can make use of GitH
 
 Your file should now look like this:
 
-```
-name: eShopOnWeb Build and Test
+<img src="imgs/yaml.PNG">
 
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v1
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.100
-    - name: Build with dotnet
-      run: dotnet build ./eShopOnWeb.sln --configuration Release
-    - name: Test with dotnet
-      run: dotnet test ./eShopOnWeb.sln --configuration Release
-    - name: Publish Docker
-      uses: elgohr/Publish-Docker-Github-Action@2.12
-      with:
-        # The name of the image you would like to push
-        name: githubworkshop30035600.azurecr.io/eshopwebmvc
-        # The login username for the registry
-        username: ${{ secrets.ACR_USERNAME }}
-        # The login password for the registry
-        password: ${{ secrets.ACR_PASSWORD }}
-        # Use registry for pushing to a custom registry
-        registry: ${{ secrets.ACR_REGISTRY }}
-        # Use dockerfile when you would like to explicitly build a Dockerfile
-        dockerfile: ./src/Web/Dockerfile
-```
 9. Go ahead and click **Start Commit**. This ensure the changes are saved, however, we are referencing secrets in our workflow that do not yet exist. The workflow will now fail. 
 
 ## Secrets
