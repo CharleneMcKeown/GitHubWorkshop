@@ -89,17 +89,12 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
 1. Navigate back to your workflow file in your repo, and click the edit button again. This time, we need to add a step in to build a Docker image and push it to the registry, now that we can log in.
 
-1. This time, we are going to run a script instead of searching the marketplace for an action. Paste the following into your workflow file at the end:
+1. This time, we are going to run a script instead of searching the marketplace for an action. Type the following into your workflow file at the end:
 
-    ```
-            - run: |
-                docker build -f src/Web/Dockerfile . -t ${{ secrets.ACR_SERVER }}/eshop:${{ github.run_id }}
-                docker push ${{ secrets.ACR_SERVER }}/eshop:${{ github.run_id }}
-    ```
+    <img src="imgs/script.png"><br>
 
-      This is a multi line script which runs directly on the build agent. It will build the Dockerfile found in **src/Web** and then push it to the container registry. It will also tag it with the unique run id for the workflow. 
+    This is a multi line script which runs directly on the build agent. It will build the Dockerfile found in **src/Web** and then push it to the container registry. It will also tag it with the unique run id for the workflow.
 
-    <img src="imgs/script.png">
 
   1. Before saving it, we should probably split our workflow file up into jobs. 
 
