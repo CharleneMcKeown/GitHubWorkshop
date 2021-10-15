@@ -61,27 +61,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
             login-server: # default is https://index.docker.io/v1/
     ```
 
-1. We do not want to expose credentials in our pipeline, so we can make use of GitHub Secrets.  For now, refer back to the values you saved earlier after creating your Container Registry. Update the following in your new step:<br> 
-          ```
-            # Container registry username
-          ```<br>
-          ```
-            username: ${{ secrets.ACR_USER}}
-          ```<br>
-          ```
-            # Container registry password
-          ```<br>
-          ```
-            password: ${{ secrets.ACR_PASSWORD}}
-          ```<br>
-          ```
-            # Container registry server url
-          ```<br>
-          ```
-            login-server: ${{ secrets.ACR_SERVER}}
-          ```
-
-Your step should now look like this:
+1. We do not want to expose credentials in our pipeline, so we can make use of GitHub Secrets.  For now, refer back to the values you saved earlier after creating your Container Registry. Update **username**, **password** and **login-server** values in your new step so it looks like this:
 
 <img src="imgs/acr3.png">
 
