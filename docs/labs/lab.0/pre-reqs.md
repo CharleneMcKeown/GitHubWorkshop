@@ -2,21 +2,16 @@
 
 You will need: 
 
-* Azure Subscription
-* GitHub Account
-
-Optional, but recommended:
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Git CLI](https://git-scm.com/downloads)
+* An Azure Subscription
+* A GitHub Account
 
 # Fork the repo
 
 Log into your GitHub account, and navigate to the below repo:
 
-https://github.com/CharleneMcKeown/GitHubWorkshop
+https://github.com/CharleneMcKeown/eShopSource
 
-Fork it by clicking on the **Fork** button:
+Fork it to your own account by clicking on the **Fork** button:
 
 <img src="imgs/ForkIt.PNG">
 
@@ -29,29 +24,29 @@ We need an Azure Resource Group and a Container registry to get started with the
 <br>
 2. Copy and paste the below commands to create the resources we need, for now. 
 
-```
-let suffix=$RANDOM*$RANDOM
-```
-```
-myResourceGroup=GitHubWorkshop$suffix
-myACR=GitHubWorkShop$suffix
-```
+    ```
+    let suffix=$RANDOM*$RANDOM
+    ```
+    ```
+    myResourceGroup=GitHubWorkshop$suffix
+    myACR=GitHubWorkShop$suffix
+    ```
 
-```
-az group create --name $myResourceGroup --location "West Europe"
-```
+    ```
+    az group create --name $myResourceGroup --location "West Europe"
+    ```
 
-```
-az acr create --name $myACR --resource-group $myResourceGroup --sku Basic --admin-enabled true
-```
+    ```
+    az acr create --name $myACR --resource-group $myResourceGroup --sku Basic --admin-enabled true
+    ```
 
 3. Wait for the resources to create, then navigate to the Container Registry you just created.
 <br>
 4. Open notepad, or somewhere you can paste in some values which we will need later.  Find the:
 
-* **Login Server name:** (GitHubWorkShop********.azurecr.io)
-* **Username** (GitHubWorkShop********)
-* **Password** (will be a long, unique string)
+    * **Login Server name:** (GitHubWorkShop********.azurecr.io)
+    * **Username** (GitHubWorkShop********)
+    * **Password** (will be a long, unique string)
 > Note: You can find the login server name on the overview page, top right, and the username and password under **Access Keys** on the left hand side menu.
 
 [Onward to Lab 1!](../lab.1/lab.1.md)

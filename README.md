@@ -1,15 +1,23 @@
 # GitHub Actions Workshop
 
-In this workshop you will create a GitHub workflow from scratch to build, test and deploy a .NET Core container image to a private container registry in Azure. 
-
-You will then enable continuous deployment on a Web App, so that whenever changes are made to source code, these are automatically deployed to the web app.
+In this lab, you will be deploying a web application to an Azure Web App using GitHub Actions.
 
 The architecture looks like this:
 
 <img src="architecture.PNG">
 
+## Learning Objectives
 
-Links to the labs are below, and these are sequential - ensure you do them in order. 
+By the end of this lab, you will have learned:
+
+1. What GitHub Workflows are and what you can do with them
+1. How to write a workflow file
+1. What events can trigger a workflow
+1. How to search the GitHub Actions marketplace for pre-built actions
+1. How to use Actions to deploy applications to Azure
+
+
+Links to the labs are below, and these are sequential - please ensure you do them in order. 
 
 [Lab 0 - Pre-requisites](docs/labs/lab.0/pre-reqs.md)
 
