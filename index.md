@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+# GitHub Actions Workshop
 
-You can use the [editor on GitHub](https://github.com/CharleneMcKeown/GitHubWorkshop/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+In this lab, you will be deploying a web application to an Azure Web App using GitHub Actions.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The architecture looks like this:
 
-### Markdown
+<img src="architecture.PNG">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Learning Objectives
 
-```markdown
-Syntax highlighted code block
+By the end of this lab, you will have learned:
 
-# Header 1
-## Header 2
-### Header 3
+1. What GitHub Workflows are and what you can do with them
+1. How to write a workflow file
+1. What events can trigger a workflow
+1. How to search the GitHub Actions marketplace for pre-built actions
+1. How to use Actions to deploy applications to Azure
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+Links to the labs are below, and these are sequential - please ensure you do them in order. 
 
-**Bold** and _Italic_ and `Code` text
+[Lab 0 - Pre-requisites](docs/labs/lab.0/pre-reqs.md)
 
-[Link](url) and ![Image](src)
-```
+[Lab 1 - Continuous Integration](docs/labs/lab.1/lab.1.md)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[Lab 2 - Continuous Deployment Part 1](docs/labs/lab.2/lab.2.md)
 
-### Jekyll Themes
+[Lab 3 - Continuous Deployment Part 2](docs/labs/lab.3/lab.3.md)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CharleneMcKeown/GitHubWorkshop/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+On the roadmap:
 
-### Support or Contact
+I will be adding more labs to cover:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* Azure DevOps Integration (Pipelines)
+* Key Vault integration
+* GitHub Branch policies
+* DevSecOps
