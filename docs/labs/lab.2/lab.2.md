@@ -1,4 +1,4 @@
-# Continuous Deployment Part 1
+# GitHub Actions & Secrets
 
 By the end of this lab, you will have updated your workflow file to build the application as a container image, and push that image to Azure Container Rregistry. 
 
