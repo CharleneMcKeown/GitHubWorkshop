@@ -9,7 +9,7 @@ You will need:
 
 Log into your GitHub account, and navigate to the below repo:
 
-https://github.com/CharleneMcKeown/eShopSource
+https://github.com/CharleneMcKeown/eShop
 
 Fork it to your own account by clicking on the **Fork** button:
 
