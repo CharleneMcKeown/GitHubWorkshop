@@ -21,23 +21,23 @@ Fork it to your own account by clicking on the **Fork** button:
 We need an Azure Resource Group and a Container registry to get started with the labs. 
 
 1. Log into the Azure portal and open a new cloud shell session. You may be prompted to create a storage account if you have never used it before - go ahead and do that. If you need some help getting started, read the [cloud shell overview](https://docs.microsoft.com/en-us/azure/cloud-shell/overview).
-<br>
-2. Copy and paste the below commands to create the resources we need, for now. 
+
+1. Copy and paste the below commands to create the resources we need, for now. 
 
     ```
-    let suffix=$RANDOM*$RANDOM
+        let suffix=$RANDOM*$RANDOM
     ```
     ```
-    myResourceGroup=GitHubWorkshop$suffix
-    myACR=GitHubWorkShop$suffix
-    ```
-
-    ```
-    az group create --name $myResourceGroup --location "West Europe"
+        myResourceGroup=GitHubWorkshop$suffix
+        myACR=GitHubWorkShop$suffix
     ```
 
     ```
-    az acr create --name $myACR --resource-group $myResourceGroup --sku Basic --admin-enabled true
+        az group create --name $myResourceGroup --location "West Europe"
+    ```
+
+    ```
+        az acr create --name $myACR --resource-group $myResourceGroup --sku Basic --admin-enabled true
     ```
 
 3. Wait for the resources to create, then navigate to the Container Registry you just created.

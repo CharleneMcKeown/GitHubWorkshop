@@ -146,6 +146,10 @@ We now need to update the workflow file to add two new jobs:
 
     <img src="imgs/e2e.png"><br>
 
+    After a few minutes, you should see that the workflow will stop before the deployProduction stage. Go ahead and click into it and approve. 
+
+    <img src="imgs/approve.png"><br>
+
 ##Todo... update end of lab to include branch policies.
 
 ### Testing it all works
