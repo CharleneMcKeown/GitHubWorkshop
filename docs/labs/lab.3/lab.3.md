@@ -48,29 +48,13 @@ There is one configuration change we need to make.
     <img src="imgs/browse.PNG">
     <img src="imgs/website.PNG">
 
-Need a Lab 4 -- environments. 
+So what have we actually got working so far? 
 
-step 1 - staging slot
-step 2 - github environments
-So what have we actually got working here? 
+We have a pipeline which takes triggers on changes to the main branch. It builds and tests the .NET Core application to make sure we haven't broken anything. The workflow then builds a Docker image using the Dockerfile we specified, and pushes that image into our private container registry hosted in Azure.
 
-We have a CI/CD workflow which takes changes to our source code and builds and tests the .NET Core application to make sure we haven't broken anything.  The workflow then builds a Docker image using the Dockerfile we specified, and pushes that image into our private container registry hosted in Azure.  The Web app will pull down the latest container image, and restart the application to reflect our changes.
+We are missing a few things. In the next lab, we will:
 
-Don't believe me? 
+1. Protect main with branch policies
+1. Create environments to reflect staging and production, with approvals
 
-### Testing it all works
-
-1. Navigate back to your GitHub repo, and find a file called **_Layout.cshtml**. It's in /src/Web/Views/Shared:
-
-<img src="imgs/codeedit.PNG">
-
-2. Scroll down to line 46, and replace it with the following:
-
-```
-<div class="esh-app-footer-text hidden-xs"> e-ShopOnWeb. Deployed with GitHub and Azure. All rights reserved </div>
-```
-
-3. Commit your changes. Your workflow will run one more time, and push the new Docker image to the Container Registry. Wait for the pipeline to finish, then browse to your website. You should see the change reflected in the header at the bottom. You can also confirm the new image was pulled by looking at the logs in **Container settings** for your Web App. 
-
-<img src="imgs/footer.PNG">
 

@@ -21,17 +21,10 @@ Links to the labs are below, and these are sequential - please ensure you do the
 
 [Lab 0 - Pre-requisites](docs/labs/lab.0/pre-reqs.md)
 
-[Lab 1 - Continuous Integration](docs/labs/lab.1/lab.1.md)
+[Lab 1 - Getting Started with Actions](docs/labs/lab.1/lab.1.md)
 
-[Lab 2 - Continuous Deployment Part 1](docs/labs/lab.2/lab.2.md)
+[Lab 2 - GitHub Actions & Secrets](docs/labs/lab.2/lab.2.md)
 
-[Lab 3 - Continuous Deployment Part 2](docs/labs/lab.3/lab.3.md)
+[Lab 3 - Azure Web Apps & Container Registry](docs/labs/lab.3/lab.3.md)
 
-On the roadmap:
-
-I will be adding more labs to cover:
-
-* Azure DevOps Integration (Pipelines)
-* Key Vault integration
-* GitHub Branch policies
-* DevSecOps
+[Lab 4 - GitHub Environments](docs/labs/lab.4/lab.4.md)
