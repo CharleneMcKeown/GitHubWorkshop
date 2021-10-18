@@ -42,7 +42,7 @@ We need an Azure Resource Group and a Container registry to get started with the
 
 3. Wait for the resources to create, then navigate to the Container Registry you just created.
 <br>
-4. Open notepad, or somewhere you can paste in some values which we will need later.  Find the:
+1. Open notepad, or somewhere you can paste in some values which we will need later.  Find the:
 
     * **Login Server name:** (GitHubWorkShop********.azurecr.io)
     * **Username** (GitHubWorkShop********)
