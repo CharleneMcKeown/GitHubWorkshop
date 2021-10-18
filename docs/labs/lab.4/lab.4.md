@@ -69,13 +69,13 @@ GitHub Environments allow you to deploy to specific environments that you specif
 1. Add a new secret called **AZURE_CREDENTIALS** and paste in the service principal you just modified. Save it. 
 1. Navigate to **Environments** in the Settings pane and click **New environment**. On the next page, name your environment **Staging** then proceed to **Configure environment**.
 
-    <img src="imgs/staging.png"><br>
+    <img src="imgs/staging.PNG"><br>
 
 1. We actually don't need to set any protection rules here, so go back and create another environment, this time called **Production**.
 
 1. Configure the Production environment so that it has one required reviewer (you!) and make sure that you limit deployment branches to main. Be sure to click **Save protection rules**.
 
-    <img src="imgs/production.png"><br>
+    <img src="imgs/production.PNG"><br>
 
 ## Deployment jobs
 
@@ -103,7 +103,7 @@ We now need to update the workflow file to add two new jobs:
 1. In the marketplace to the right, search for **Azure web app** and find the action called **Azure WebApp**. Click on it, then copy and paste the action into your workflow file. 
 
 
-    <img src="imgs/azureaction.png"><br>
+    <img src="imgs/azureaction.PNG"><br>
 
 1. Underneath **with**, delete everything except:
 
@@ -120,23 +120,23 @@ We now need to update the workflow file to add two new jobs:
 
 1. Add another job, this time for production:
 
-```
-    deployProduction:
-        runs-on: ubuntu-latest
-        needs: deployStaging
-        environment: production
-        steps:
-```
+    ```
+        deployProduction:
+            runs-on: ubuntu-latest
+            needs: deployStaging
+            environment: production
+            steps:
+    ```
 
 1. Add in a step for Azure login as before.
 1. Create a new step to run a single line command. Copy and paste in the below, replacing the **name** and **resource group** with your own:
 
-```
-      - name: Swap staging to production
-        run: |
-          az webapp deployment slot swap --name GitHubWorkShop12345678 --resource-group GitHubWorkShop12345678 --slot staging --target-slot production
+    ```
+        - name: Swap staging to production
+            run: |
+            az webapp deployment slot swap --name GitHubWorkShop12345678 --resource-group GitHubWorkShop12345678 --slot staging --target-slot production
 
-```
+    ```
 
 1. Your job should now look like this: 
 

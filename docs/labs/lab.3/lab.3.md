@@ -1,4 +1,4 @@
-# Continuous Deployment Part 2
+# Azure Web Apps & Container Registry
 
 ## Web App for Containers
 
@@ -57,4 +57,4 @@ We are missing a few things. In the next lab, we will:
 1. Protect main with branch policies
 1. Create environments to reflect staging and production, with approvals
 
-
+[Begin Lab 4!](../lab.4/lab.4.md)

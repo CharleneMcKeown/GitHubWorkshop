@@ -5,7 +5,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 ## Building a Docker image
 
 1. Click on **Code**, then .github/workflows and select your build.yml file (or whatever you called it).
-<br>
+
 1. Click the **edit** button.
 
     <img src="imgs/EditIt.PNG">
@@ -17,7 +17,6 @@ By the end of this lab, you will have updated your workflow file to build the ap
     <img src="imgs/acr.png">
 
 1. Click on the copy button and then paste it into the bottom of your yaml file.
-<br>
 
     <img src="imgs/acr2.png">
 
