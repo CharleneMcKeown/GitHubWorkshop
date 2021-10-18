@@ -80,7 +80,7 @@ GitHub Actions are a way for us to do something with our code, in an automated w
 
 1. Click on **Actions** to view the workflow, which should still be running.
 
-    <img src="imgs/Workflow2.png">
+    <img src="imgs/workflow2.png">
 
 1. Click on **build** the to see a live view of logs for each step. 
 
