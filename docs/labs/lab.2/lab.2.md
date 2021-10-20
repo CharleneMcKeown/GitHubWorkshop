@@ -76,7 +76,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
     * ACR_USER
     * ACR_PASSWORD
-    * ACR_REGISTRY
+    * ACR_SERVER
 
     > Note: Once you save them, they will be encrypted so you will not be able to see the values - double check they are correct before saving each one. 
 
