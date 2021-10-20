@@ -1,6 +1,6 @@
 # GitHub Actions & Secrets
 
-By the end of this lab, you will have updated your workflow file to build the application as a container image, and push that image to Azure Container Rregistry. 
+By the end of this lab, you will have updated your workflow file to build the application as a container image, and push that image to Azure Container Registry. 
 
 ## Building a Docker image
 
