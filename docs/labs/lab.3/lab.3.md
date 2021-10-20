@@ -16,7 +16,7 @@ We are going to host our container in an Azure App Service Plan.
 
 1. On the next screen, leave the subscription and resource on default (if they aren't selected, choose the subscription and resource group you have been using in this lab). Leave everything else on default, apart from:
 
-    * Name: Choose a unique name for your web app
+    * Name: Choose a unique name for your web app - I suggest using the same name as your resource group to make sure it is unique - e.g. GitHubWorkshop12345678
     * Region: Choose the same region as you used earlier
 
     <br><img src="imgs/options1.PNG">
