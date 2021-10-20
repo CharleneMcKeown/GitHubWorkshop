@@ -21,7 +21,7 @@ We are going to host our container in an Azure App Service Plan.
 
     <br><img src="imgs/options1.PNG">
 
-1. Click **Docker**
+1. Click **Docker** (note: you can ignore the Deployment tab)
 
     * Change **Image Source** to **Azure Container Registry** and select your registry from the dropdown.  
     * Select the image **eshop** from the dropdown. 
