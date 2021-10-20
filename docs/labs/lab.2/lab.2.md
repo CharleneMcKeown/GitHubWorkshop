@@ -114,7 +114,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
       >Note: by writing **needs: build** means that this job will only run if the preceding job, **build**, was successful. In this way, we can make sure that the job that creates and pushes the container image only runs if the code builds and tests successfully.
 
-  1. Commit your change and then naviagate to the Actions tab again. You will now see your Action is running, but this time is split out into two visual jobs.
+  1. Commit your change and then navigate to the Actions tab again. You will now see your Action is running, but this time is split out into two visual jobs.
 
       <img src="imgs/multijobs.png">
   
