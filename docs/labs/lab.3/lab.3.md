@@ -24,8 +24,7 @@ We are going to host our container in an Azure App Service Plan.
 1. Click **Docker**
 
     * Change **Image Source** to **Azure Container Registry** and select your registry from the dropdown.  
-    * Select the image **eshoponwebmvc** from the dropdown. 
-    * Select the tag **latest** from the dropdown. 
+    * Select the image **eshop** from the dropdown. 
 
     <img src="imgs/options2.PNG">
 
