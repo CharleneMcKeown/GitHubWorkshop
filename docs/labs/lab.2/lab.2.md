@@ -80,7 +80,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
     > Note: Once you save them, they will be encrypted so you will not be able to see the values - double check they are correct before saving each one. 
 
-1. Navigate to **Actions** and select the most recent run of the workflow - the one that failed (it will have a red cross beside it).  We can re-run the jobs but hitting that button:
+1. Navigate to **Actions** and select the most recent run of the workflow - the one that failed (it will have a red cross beside it).  We can re-run the jobs by hitting that button:
 
     <img src="imgs/rerun.PNG">
 
