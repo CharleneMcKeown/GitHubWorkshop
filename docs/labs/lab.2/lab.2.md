@@ -68,7 +68,7 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
 ## Secrets
 
-1. Click on **Settings**, **Secrets** and then **Add new secret**.
+1. Click on **Settings**, **Secrets** and then **New repository secret**.
 
     <img src="imgs/secrets.PNG">
 
