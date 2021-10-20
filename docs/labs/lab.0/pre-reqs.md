@@ -13,7 +13,7 @@ https://github.com/CharleneMcKeown/eShop
 
 Fork it to your own account by clicking on the **Fork** button:
 
-<img src="imgs/ForkIt.PNG">
+<img src="imgs/fork.png">
 
 
 # Deploy the infrastructure
