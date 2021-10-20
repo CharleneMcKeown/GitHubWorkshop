@@ -123,6 +123,6 @@ By the end of this lab, you will have updated your workflow file to build the ap
 
   <img src="imgs/repo.PNG">
 
-In the next lab, we will deploy a Web App for Containers and set it up so that it always has the latest image from the container registry. 
+In the next lab, we will deploy a Web App for Containers and get it to do an initial pull from the container registry.
 
 [Onward to Lab 3!](../lab.3/lab.3.md)
