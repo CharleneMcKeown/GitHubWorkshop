@@ -8,7 +8,7 @@ We have a .Net Core application called eShopOnWeb which we want to deploy as par
 
 A GitHub Workflow is an automated process made up of jobs. They are configurable YAML files, and must be stored in a particular folder in your repo - **./github/workflows/**. 
 
-GitHub Actions are a way for us to do something with our code, in an automated way.  We can build it, test it, scan it for secrets, push it somewhere else, and even deploy it to infrastructure somewhere.  Actions can also be used to automated other tasks, which we will see later.
+GitHub Actions are a way for us to do something with our code, in an automated way.  We can build it, test it, scan it for secrets, push it somewhere else, and even deploy it to infrastructure somewhere.  Actions can also be used to automate other tasks, such as labelling issues or closing inactive issues. 
 
 1. Click on the **Actions** tab in your repo.  You will see that GitHub is already aware of what code is in the repo, and is smart enough to present us the option of a starter workflow for .NET.  Click **Set up this workflow** as shown in the picture below.
 

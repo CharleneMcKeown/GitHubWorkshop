@@ -150,20 +150,17 @@ We now need to update the workflow file to add two new jobs:
 
     <img src="imgs/approve.png"><br>
 
-##Todo... update end of lab to include branch policies.
+### Next Steps
 
-### Testing it all works
+Here are some ideas for improving your current workflow:
 
-1. Navigate back to your GitHub repo, and find a file called **_Layout.cshtml**. It's in /src/Web/Views/Shared:
+1. Introduce branch policy to protect main.
+1. Improve your workflow to run build and test of your code for each pull request.
 
-<img src="imgs/codeedit.PNG">
+### Learning Resources
 
-2. Scroll down to line 46, and replace it with the following:
+[MS Learn: GitHub Actions Learning Path](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/) - Taking approximately 5 hours to complete, this learning path covers many key areas for automating workflows and contains a bunch of hands on labs from GitHub Learning Lab.
 
-```
-<div class="esh-app-footer-text hidden-xs"> e-ShopOnWeb. Deployed with GitHub and Azure. All rights reserved </div>
-```
+[GitHub Actions for Project Management](https://docs.github.com/en/actions/managing-issues-and-pull-requests/using-github-actions-for-project-management) - Go beyond just CI/CD and learn how to use Actions for Project Management tasks.
 
-3. Commit your changes. Your workflow will run one more time, and push the new Docker image to the Container Registry. Wait for the pipeline to finish, then browse to your website. You should see the change reflected in the header at the bottom. You can also confirm the new image was pulled by looking at the logs in **Container settings** for your Web App. 
-
-<img src="imgs/footer.PNG">
+[GitHub Public Roadmap](https://github.com/github/roadmap/projects/1?card_filter_query=actions) - Actions is improving all the time - keep an eye out on the public roadmap for upcoming features.
