@@ -32,28 +32,13 @@ The first thing we need to do is add a deployment slot to the website. You can t
     - {SubID} with your subscriptionId (you will find this in the **Overview** section for your Resource Group)
 
     ```
-    az ad sp create-for-rbac -n "GitHubWorkShop********" --role Contributor --scopes /subscriptions/{SubID}/resourceGroups/GitHubWorkShop********
+    az ad sp create-for-rbac -n "GitHubWorkShop********" --role Contributor --scopes /subscriptions/{SubID}/resourceGroups/GitHubWorkShop******** --sdk-auth
     ```
 
-1. After a few seconds, you will get the details of your newly created service principal. Copy and paste them into notepad. 
+1. After a few seconds, you will get the details of your newly created service principal. Copy and paste them into notepad, you will need them shortly. 
 
 
     <img src="imgs/sp.png"><br>
-
-1. We need to change this slightly. Update **appId** to **clientId**, **password** to **clientSecret**, **tenant** to **tenantId** and finally, add in a new key value pair for your **subscriptionId**. Your service principal details should now look like the below (with your own values):
-
-    ``` 
-        {
-        "clientId": "683b4c69-f60d-417f-b299-7034d03659e9",
-        "displayName": "GitHubWorkShop12345678",
-        "name": "683b4c69-f60d-417f-b299-7034d03659e9",
-        "clientSecret": "",
-        "tenantId": "",
-        "subscriptionId": ""
-        }
-    ```
-
-    Keep this in notepad - you will need it shortly. 
 
 ## GitHub Environments
 
@@ -66,7 +51,7 @@ GitHub Environments allow you to deploy to specific environments that you specif
 
 
 1. In your GitHub repo, navigate to **Settings** and then **Secrets**. 
-1. Add a new secret called **AZURE_CREDENTIALS** and paste in the service principal you just modified. Save it. 
+1. Add a new secret called **AZURE_CREDENTIALS** and paste in the service principal you just created. Save it. 
 1. Navigate to **Environments** in the Settings pane and click **New environment**. On the next page, name your environment **Staging** then proceed to **Configure environment**.
 
     <img src="imgs/staging.PNG"><br>
