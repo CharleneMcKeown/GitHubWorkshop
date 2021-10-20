@@ -51,9 +51,9 @@ So what have we actually got working so far?
 
 We have a pipeline which takes triggers on changes to the main branch. It builds and tests the .NET Core application to make sure we haven't broken anything. The workflow then builds a Docker image using the Dockerfile we specified, and pushes that image into our private container registry hosted in Azure.
 
-We are missing a few things. In the next lab, we will:
+In the next lab, we will:
 
-1. Protect main with branch policies
+1. Update the workflow to deploy new container images to the web app
 1. Create environments to reflect staging and production, with approvals
 
 [Begin Lab 4!](../lab.4/lab.4.md)
