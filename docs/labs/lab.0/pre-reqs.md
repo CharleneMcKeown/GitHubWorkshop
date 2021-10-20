@@ -20,7 +20,7 @@ Fork it to your own account by clicking on the **Fork** button:
 
 We need an Azure Resource Group and a Container registry to get started with the labs. 
 
-1. Log into the Azure portal and open a new cloud shell session. You may be prompted to create a storage account if you have never used it before - go ahead and do that. If you need some help getting started, read the [cloud shell overview](https://docs.microsoft.com/en-us/azure/cloud-shell/overview).
+1. Log into the Azure portal and open a new cloud shell session using Bash. You may be prompted to create a storage account if you have never used it before - go ahead and do that. If you need some help getting started, read the [cloud shell overview](https://docs.microsoft.com/en-us/azure/cloud-shell/overview).
 
 1. Copy and paste the below commands to create the resources we need, for now. 
 
